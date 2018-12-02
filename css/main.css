@@ -1,3 +1,6 @@
+
+
+
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -96,6 +99,55 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
+
+html {
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Proxima-Nova', Arial, Helvetica, sans-serif;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Gotham-Black', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+
+header {
+    background: linear-gradient(to bottom, rgba(33,45,94,1) 0%,rgba(110,163,210,0) 58%,rgba(125,185,232,0) 69%);
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav {
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-nav-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.sub-nav {
+    display: none;
+}
+
+
+
+
+
 
 
 
