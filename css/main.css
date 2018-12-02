@@ -116,6 +116,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #50d3de;
+}
+
 
 h1, h2, h3, h4, h5 {
     font-family: 'Gotham-Black', Arial, Helvetica, sans-serif;
@@ -130,14 +134,18 @@ h1, h2, h3, h4, h5 {
 
 /* Header */
 
-header {
+.header-container {
+    position: relative;
     background: linear-gradient(to bottom, rgba(33,45,94,1) 0%,rgba(110,163,210,0) 58%,rgba(125,185,232,0) 69%);
     margin: 0;
     padding: 3.8em 2em 2em 2em;
 }
 
+
+/*logo */
+
 .top-logo {
-    display: flex;
+    float: left;
 }
 
 .top-logo h1{
@@ -154,21 +162,35 @@ header {
     color: #50d3de;
 }
 
-.top-nav {
-    color: #fff;
-    display: flex;
-    justify-content: flex-end;
+/* Navigation */
+
+.top-nav-list {
     text-transform: uppercase;
     letter-spacing: .15em;
-    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
 }
 
-.top-nav a {
+.top-item {
     display: inline-block;
-    padding: 1em 0;
 }
 
-.top-nav a::after {
+.top-nav li {
+    padding: 0 .5em;
+}
+
+.top-nav li:hover .top-item{
+    color: #50d3de;
+}
+
+.top-nav li:hover header {
+    background-color: green;
+}
+
+.top-nav li:after {
     content: '';
     display: block;
     position: relative;
@@ -179,26 +201,46 @@ header {
     transition: width .3s;
 }
 
-.top-nav a:hover::after {
+.top-nav li:hover:after {
     width: 100%;
 }
 
-.top-nav-list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style-type: none;
-}
-
-.top-nav-list li {
-    padding: 0 .5em;
+.top-nav li:last-child::after {
+    display: none;
 }
 
 .sub-nav {
     display: none;
 }
 
+.top-nav-list li:hover .sub-nav {
+    display: block;
+}
 
+.sub-nav {
+    list-style-type: none;
+    line-height: 1.2em;
+    padding: 1.5em 0;
+    margin: 0 -.25em;
+    font-family: 'Proxima-Nova', Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    font-weight: lighter;
+    text-transform: capitalize;
+    position: absolute;   
+}
+
+
+.sub-nav li:after {
+    display: none;
+}
+
+.sub-nav li {
+    padding-bottom: 1em;
+}
+
+.search:after {
+    display: none;
+}
 
 
 
