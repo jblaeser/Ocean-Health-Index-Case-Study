@@ -113,6 +113,7 @@ html {
     background-attachment: fixed;
     font-family: 'Proxima-Nova', Arial, Helvetica, sans-serif;
     color: #fff;
+    overflow-x: hidden;
 }
 
 a {
@@ -327,6 +328,7 @@ h2 {
     position: relative;
     margin: .5em 0 0 0;
     max-width: 80%;
+    z-index: 3;
 }
 
 .assessments p {
@@ -334,6 +336,8 @@ h2 {
     letter-spacing: 0.04em;
     line-height: 1.4em;
     margin-bottom: 1.5em;
+    position: relative;
+    z-index: 3;
 }
 
 .global-assessment h2:before {
@@ -370,6 +374,8 @@ h2 {
     letter-spacing: 0;
     font-size: .8em;
     transition: .3s ease;
+    position: relative;
+    z-index: 3;
 }
 
 .global-button:hover {
@@ -387,6 +393,8 @@ h2 {
     letter-spacing: 0;
     font-size: .8em;
     transition: .3s ease;
+    position: relative;
+    z-index: 3;
 }
 
 .independent-button:hover {
@@ -404,6 +412,8 @@ h2 {
     background-position: top;
     padding: 1em 0;
     height: 75em;
+    position: relative;
+    z-index: 3;
 }
 
 .curve-container {
@@ -472,7 +482,7 @@ h2 {
 .info-container {
     height: 100%;
     position: absolute;
-    z-index: 3;
+    z-index: 5;
     top: 0;
     left: 0;
     display: flex;
@@ -620,6 +630,18 @@ footer a:hover {
 
 .bottom-logo h2:hover {
     color: #50d3de;
+}
+
+
+.jellyfish {
+    position: absolute;
+    z-index: 2;
+    top: 525px;
+    left: 950px;
+    background-image: url(../img/jelly.png);
+    background-size: 100%;
+    min-width: 50%;
+    min-height: 50%;
 }
 
 
