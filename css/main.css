@@ -139,6 +139,11 @@ h1, h2, h3, h4, h5 {
 
 /* Header */
 
+header {
+    position: fixed;
+    top: 0;
+}
+
 .header-container {
     position: relative;
     z-index: 1;
@@ -288,7 +293,7 @@ h1, h2, h3, h4, h5 {
 /* Assessments Section */
 
 .assessments {
-    margin: 10em auto 1em auto;
+    margin: 29.5em auto 1em auto;
     max-width: 84%;
     display: flex;
     justify-content: center;

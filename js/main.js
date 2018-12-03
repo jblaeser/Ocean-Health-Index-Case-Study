@@ -3,3 +3,11 @@ $('.top-nav-list li').on('mouseover', function(){
   }).on('mouseout', function(){
     $('.header-container').removeClass('header-hover');
   })
+
+
+
+var header = $('.header');
+$(window).on('scroll', function() {
+   var st = $(this).scrollTop();
+   header.css({ 'opacity' : (1 - st/150) });
+});
