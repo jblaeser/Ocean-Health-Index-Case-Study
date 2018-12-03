@@ -128,6 +128,7 @@ a:hover {
 h1, h2, h3, h4, h5 {
     font-family: 'Gotham-Bold', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
+    font-weight: bolder;
 }
 
 
@@ -236,7 +237,6 @@ h1, h2, h3, h4, h5 {
     position: absolute;   
 }
 
-
 .sub-nav li:after {
     display: none;
 }
@@ -261,7 +261,6 @@ h1, h2, h3, h4, h5 {
 
 .page-description h1 {
     font-size: 3.1em;
-    font-weight: 900;
     text-shadow: 0 .125em .625em rgba(0,0,0,.2);
     margin-bottom: 0;
 }
@@ -289,25 +288,107 @@ h1, h2, h3, h4, h5 {
 /* Assessments Section */
 
 .assessments {
-    margin: 6em auto;
-    width: 80%;
+    margin: 10em auto;
+    max-width: 84%;
     display: flex;
     justify-content: center;
+    line-height: 2.25em;
+    letter-spacing: .07em;
 }
 
 
 .global-assessment {
+    padding: 2em 2.5em 2.75em 2.5em;
     flex: 1;
     background-image: url(../img/section-bg.png);
     background-color: #fff;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    background-position: bottom right;
+    color: #19204c;
 }
 
 .independent-assessment {
+    padding: 2em 2.5em 2.75em 2.5em;
     flex: 1;
+    background-color: rgba(33,45,94, .9);
 }
+
+h2 {
+    font-family: 'Gotham-Black', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.assessments h2 {
+    position: relative;
+    margin: .5em 0 0 0;
+    max-width: 80%;
+}
+
+.assessments p {
+    font-size: 1.1em;
+    letter-spacing: 0.04em;
+    line-height: 1.4em;
+    margin-bottom: 1.5em;
+}
+
+.global-assessment h2:before {
+    content: '';
+    width: .65em;
+    height: .125em;
+    background-color: #19204c;
+    position: absolute;
+    top: -.625em;
+    left: .05em;
+}
+
+.independent-assessment h2:before {
+    content: '';
+    width: .65em;
+    height: .125em;
+    background-color: #fff;
+    position: absolute;
+    top: -.625em;
+    left: .05em;
+}
+
+.OHI {
+    font-family: 'Gotham-Bold', Arial, Helvetica, sans-serif;
+}
+
+
+.global-button {
+    color: #19204c;
+    font-family: 'Gotham-Bold', Arial, Helvetica, sans-serif;
+    border: .1em solid #19204c;
+    margin-right: 1em;
+    padding: 1.4em;
+    letter-spacing: 0;
+    font-size: .8em;
+    transition: .3s ease;
+}
+
+.global-button:hover {
+    color: #fff;
+    background-color: #19204c;
+}
+
+
+.independent-button {
+    color: #fff;
+    font-family: 'Gotham-Bold', Arial, Helvetica, sans-serif;
+    border: .1em solid #fff;
+    margin-right: 1em;
+    padding: 1.4em;
+    letter-spacing: 0;
+    font-size: .8em;
+    transition: .3s ease;
+}
+
+.global-button:hover {
+    color: #19204c;
+    background-color: #fff;
+}
+
 
 
 
