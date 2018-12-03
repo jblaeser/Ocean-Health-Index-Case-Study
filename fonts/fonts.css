@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Proxima-Nova';
-    src: url('ProximaNova-Regular.eot');
-    src: url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
-         url('ProximaNova-Regular.woff2') format('woff2'),
-         url('ProximaNova-Regular.woff') format('woff'),
-         url('ProximaNova-Regular.ttf') format('truetype'),
-         url('ProximaNova-Regular.svg#Proxima-Nova') format('svg');
+    src: url('Proxima-Nova-Light.eot');
+    src: url('Proxima-Nova-Light.eot?#iefix') format('embedded-opentype'),
+         url('Proxima-Nova-Light.woff2') format('woff2'),
+         url('Proxima-Nova-Light.woff') format('woff'),
+         url('Proxima-Nova-Light.ttf') format('truetype'),
+         url('Proxima-Nova-Light.svg#Proxima-Nova') format('svg');
 }
 
 @font-face {
