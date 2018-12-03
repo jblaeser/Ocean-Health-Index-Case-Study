@@ -581,8 +581,40 @@ h4 {
 
 
 
+/* Footer */
+
+
 footer {
-    margin-top: 25em;
+    margin-top: 16em;
+    background-color: #fff;
+    color: #19204c;
+}
+
+footer a {
+    color: #19204c;
+}
+
+footer a:hover {
+    color: #50d3de;
+}
+
+.bottom-logo {
+    display: flex;
+    justify-content: center;
+}
+.bottom-logo h2{
+    font-weight: normal;
+    font-size: 12.5em;
+    margin: .5em auto;
+    line-height: 0;
+    font-family: 'Glyphter';
+    text-align: center;
+    color: #19204c;
+    transition: .3s ease;
+}
+
+.bottom-logo h2:hover {
+    color: #50d3de;
 }
 
 
