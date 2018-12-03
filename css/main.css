@@ -529,7 +529,7 @@ h4 {
 
 
 
-
+/* Newsletter Section */
 
 
 .newsletter-signup {
@@ -547,12 +547,38 @@ h4 {
     max-width: 58%;
     text-align: center;
     position: relative;
-    
+    letter-spacing: .03em;
+    line-height: 1.1em;
+}
+
+.newsletter-signup h2:before {
+    content: '';
+    width: 1.4em;
+    height: .125em;
+    background-color: #fff;
+    position: absolute;
+    top: -.8em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.newsletter-signup h2:after {
+    content: '';
+    width: 1.4em;
+    height: .125em;
+    background-color: #fff;
+    position: absolute;
+    top: 2.75em;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .newsletter-email-container{
     margin: 2em;
+    display: flex;
+    justify-content: center;
 }
+
 
 
 footer {
