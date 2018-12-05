@@ -109,7 +109,7 @@ textarea {
 
 html {
     background: url(../img/bg.jpg) no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-attachment: fixed;
     font-family: 'Proxima-Nova', Arial, Helvetica, sans-serif;
     color: #fff;
@@ -143,6 +143,7 @@ h1, h2, h3, h4, h5 {
 header {
     position: fixed;
     top: 0;
+    z-index: -1;
 }
 
 .header-container {
@@ -260,7 +261,6 @@ header {
 /* Description Section */
 .page-description {
     position: relative;
-    z-index: -1;
     margin: -5.25em 9em;
     letter-spacing: .085em;
 }
@@ -297,6 +297,7 @@ header {
     margin: 29.5em auto 1em auto;
     max-width: 84%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     line-height: 2.25em;
     letter-spacing: .07em;
@@ -404,31 +405,52 @@ h2 {
 
 
 
+/* Jellyfish */
+
+.jellyfish {
+    position: absolute;
+    z-index: 2;
+    top: 525px;
+    left: 950px;
+    background-image: url(../img/jelly.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-width: 50%;
+    min-height: 50%;
+}
+
+
+
 /* News Section */
 
 .bg-container {
+    content: '';
     background-image: url(../img/news-bg.png);
     background-repeat: no-repeat;
     background-position: top;
+    background-size: 100% 100%;
     padding: 1em 0;
-    height: 75em;
-    position: relative;
+    position: absolute;
     z-index: 3;
+    min-height: 75em;
 }
 
-.curve-container {
+.bg-container:after {
+    content: '';
     background-image: url(../img/curve.png);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
-    top: 113em;
-    width: 100%;
-    height: 9.375em;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 9.375em;
     z-index: 4;
 }
 
 .news-section {
     max-width: 77%;
     margin: 0 auto;
+    position: relative;
 }
 
 .news-section h2 {
@@ -481,6 +503,7 @@ h2 {
 
 .info-container {
     height: 100%;
+    width: 100%;
     position: absolute;
     z-index: 5;
     top: 0;
@@ -548,22 +571,20 @@ h4 {
 
 
 .newsletter-signup {
-    position: absolute;
+    margin-top: 76em;
     width: 100%;
-    top: 120em;
-    left: 0;
     padding: 2em;
     background-color: #19204c;
     clear: both;
 }
 
 .newsletter-signup h2 {
-    margin: 2em auto;
+    margin: 1em auto;
     max-width: 58%;
     text-align: center;
-    position: relative;
     letter-spacing: .03em;
     line-height: 1.1em;
+    position: relative;
 }
 
 .newsletter-signup h2:before {
@@ -600,7 +621,6 @@ h4 {
 
 
 footer {
-    margin-top: 16em;
     background-color: #fff;
     color: #19204c;
 }
@@ -624,29 +644,27 @@ footer a:hover {
     line-height: 0;
     font-family: 'Glyphter';
     text-align: center;
-    color: #19204c;
     transition: .3s ease;
 }
 
-.bottom-logo h2:hover {
-    color: #50d3de;
-}
 
-
-.jellyfish {
-    position: absolute;
-    z-index: 2;
-    top: 525px;
-    left: 950px;
-    background-image: url(../img/jelly.png);
-    background-size: 100%;
-    min-width: 50%;
-    min-height: 50%;
+.contact {
+    max-width: 77%;
+    margin: 0 auto;
+    border-top: .0675em solid #19204c;
+    border-bottom: .0675em solid #19204c;
+    display: flex;
+    justify-content: space-between;
 }
 
 
 
-
+.dropdowns {
+    max-width: 77%;
+    margin: 0 auto;
+    border-bottom: .0675em solid #19204c;
+    display: flex;
+}
 
 
 
