@@ -119,6 +119,7 @@ html {
 a {
     color: #fff;
     text-decoration: none;
+    transition: .3s ease;
 }
 
 a:hover {
@@ -170,12 +171,8 @@ header {
     line-height: 0;
     margin: 0;
     display: inline-block;
-    transition: color .3s ease;
 }
 
-.top-logo h1:hover {
-    color: #50d3de;
-}
 
 /* Navigation */
 
@@ -197,13 +194,6 @@ header {
     padding: 0 .5em;
 }
 
-.top-nav li:hover .top-item{
-    color: #50d3de;
-}
-
-.top-nav li:hover header {
-    background-color: green;
-}
 
 .top-nav li:after {
     content: '';
@@ -629,9 +619,6 @@ footer a {
     color: #19204c;
 }
 
-footer a:hover {
-    color: #50d3de;
-}
 
 .bottom-logo {
     display: flex;
