@@ -760,13 +760,73 @@ footer a {
     margin: 0 auto;
     border-bottom: .0675em solid #19204c;
     display: flex;
+    justify-content: space-between;
     padding: 2em 0;
 }
 
 
-option[value=""][disabled] {
+.custom-select {
+    position: relative;
+    font-family: 'Gotham-Black', Arial, Helvetica, sans-serif;
+    border: .0625em solid #19204c;
+    flex-basis: 32%;
+    padding: .25em 0;
+    text-transform: uppercase;
+  }
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  .select-selected {
+    background-color: #fff;
+  }
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 40%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: .5em solid transparent;
+    border-color: #19204c transparent transparent transparent;
+  }
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #19204c transparent;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #19204c;
+    padding: 8px 16px;
+    cursor: pointer;
+    user-select: none;
+  }
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    font-family: 'Proxima-Nova', Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    background-color: #fff;
+    border: .0625em solid #19204c;
+    width: 100.75%;
+    height: 13em;
+    top: 100%;
+    left: -.05em;
+    right: 0;
+    z-index: 99;
+    overflow: scroll;
+  }
+  /*hide the items when the select box is closed:*/
+  .select-hide {
     display: none;
   }
+  .select-items div:hover, .same-as-selected {
+    background-color: #e0e2e6;
+    color: #394955;
+  }
+  
 
 
 
