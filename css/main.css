@@ -603,7 +603,7 @@ h4 {
 /* Email Entry */
 
 .newsletter-email-container{
-    margin: 3.5em 0 1em 0;
+    margin: 3.5em 0 1.5em 0;
     display: flex;
     justify-content: center;
 }
@@ -767,64 +767,71 @@ footer a {
 
 .custom-select {
     position: relative;
-    font-family: 'Gotham-Black', Arial, Helvetica, sans-serif;
     border: .0625em solid #19204c;
     flex-basis: 32%;
     padding: .25em 0;
     text-transform: uppercase;
   }
   .custom-select select {
-    display: none; /*hide original SELECT element:*/
+    display: none; 
   }
   .select-selected {
-    background-color: #fff;
+    font-family: 'Gotham-Black', Arial, Helvetica, sans-serif;
+    font-size: .9em;
   }
-  /*style the arrow inside the select element:*/
   .select-selected:after {
     position: absolute;
     content: "";
     top: 40%;
-    right: 10px;
+    right: 1.5em;
+    transform: translateX(50%);
     width: 0;
     height: 0;
     border: .5em solid transparent;
     border-color: #19204c transparent transparent transparent;
   }
-  /*point the arrow upwards when the select box is open (active):*/
   .select-selected.select-arrow-active:after {
     border-color: transparent transparent #19204c transparent;
     top: 40%;
-    transform: translateY(-50%);
+    transform: translate(50%, -50%);
   }
-  /*style the items (options), including the selected item:*/
   .select-items div,.select-selected {
     color: #19204c;
-    padding: 8px 16px;
+    padding: .5em 1em;
     cursor: pointer;
     user-select: none;
   }
-  /*style items (options):*/
   .select-items {
     position: absolute;
     font-family: 'Proxima-Nova', Arial, Helvetica, sans-serif;
     text-transform: capitalize;
     background-color: #fff;
     border: .0625em solid #19204c;
-    width: 100.75%;
-    height: 13em;
+    width: 100.65%;
+    height: 12em;
     top: 100%;
     left: -.05em;
     right: 0;
     z-index: 99;
     overflow: scroll;
   }
-  /*hide the items when the select box is closed:*/
   .select-hide {
     display: none;
   }
   .select-items div:hover, .same-as-selected {
     background-color: #e0e2e6;
     color: #394955;
+  }
+
+  .select-selected:before {
+      width: 0;
+      height: 3em;
+      width: .05em;
+      background-color: #19204c;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 3em;
   }
   
 
