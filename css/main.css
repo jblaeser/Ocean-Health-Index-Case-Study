@@ -599,11 +599,61 @@ h4 {
     transform: translateX(-50%);
 }
 
+
+/* Email Entry */
+
 .newsletter-email-container{
-    margin: 2em;
+    margin: 3.5em 0 1em 0;
     display: flex;
     justify-content: center;
 }
+
+
+.email-entry-newsletter {
+    border: .0675em solid #fff;
+    background-color: #19204c;
+    color: #fff;
+    font-family: 'Gotham-Black', Arial, Helvetica, sans-serif;
+    letter-spacing: .02em;
+    font-size: 1.1em;
+    width: 22em;
+    height: 3em;
+    padding: 0 0 0 1em;
+}
+
+.email-entry-newsletter::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.email-entry-newsletter:focus {
+    outline: none;
+}
+
+
+.newsletter-submit {
+    background-color: #19204c;
+    color: #fff;
+    border: .0675em solid #fff;
+    width: 3.75em;
+    height: 3.3em;
+    margin-left: -.35em;
+    position: relative;
+    top: .2em;
+    transition: .3s ease;
+}
+
+.newsletter-submit:hover {
+    background-color: #fff;
+    color: #19204c;
+}
+
+.newsletter-submit-check {
+    font-size: 1.5em;
+}
+
+
+
 
 
 
@@ -620,6 +670,8 @@ footer a {
 }
 
 
+/* Bottom Logo */
+
 .bottom-logo {
     display: flex;
     justify-content: center;
@@ -634,6 +686,8 @@ footer a {
     transition: .3s ease;
 }
 
+
+/* Contact Section */
 
 .contact {
     max-width: 77%;
@@ -655,6 +709,52 @@ footer a {
 }
 
 
+.social-email-entry {
+    border: .0675em solid #19204c;
+    color: #19204c;
+    font-family: 'Gotham-Black', Arial, Helvetica, sans-serif;
+    letter-spacing: .02em;
+    font-size: .9em;
+    width: 18em;
+    height: 3em;
+    padding: 0 0 0 1em;
+}
+
+.social-email-entry::placeholder {
+    color: #19204c;
+    opacity: 1;
+}
+
+.social-email-entry:focus {
+    outline: none;
+}
+
+
+.email-submit {
+    color: #19204c;
+    border: .0675em solid #19204c;
+    width: 3.5em;
+    height: 2.71em;
+    margin-left: -.35em;
+    position: relative;
+    top: .12em;
+    transition: .3s ease;
+}
+
+.email-submit:hover {
+    background-color: #19204c;
+    color: #fff;
+}
+
+.email-submit-check {
+    font-size: 1.25em;
+}
+
+
+
+
+/* Dropdown Menus */
+
 .dropdowns {
     max-width: 77%;
     margin: 0 auto;
@@ -669,6 +769,9 @@ option[value=""][disabled] {
   }
 
 
+
+
+/* Bottom Navigation */  
 
 .bottom-nav {
     max-width: 77%;
@@ -709,6 +812,8 @@ option[value=""][disabled] {
 }
 
 
+
+/* Footer Info */
 
 .copyright-info {
     background-color: #e6e6e6;
