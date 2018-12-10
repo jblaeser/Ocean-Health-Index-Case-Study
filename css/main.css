@@ -454,10 +454,14 @@ h2 {
 
 .view-all {
     float: right;
+    position: relative;
+    z-index: 3;
+    display: inline-block;
     letter-spacing: .03em;
     font-size: 1.125em;
     margin: -1.75em 0;
 }
+
 
 .news-container {
     margin: 1.75em 0 10em 0;
