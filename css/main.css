@@ -464,15 +464,16 @@ h2 {
 
 
 .news-container {
-    margin: 1.75em 0 10em 0;
+    width: 101.4%;
+    margin: 1.75em 0 11em -.4em;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .news-item {
-    margin: .5em 1em .5em 0;
-    min-width: 32.2%;
+    border: .5em solid transparent;
+    min-width: 20em;
     flex: 1;
     position: relative;
     overflow: hidden;
