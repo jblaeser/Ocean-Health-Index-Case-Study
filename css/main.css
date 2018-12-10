@@ -291,6 +291,10 @@ header {
     letter-spacing: .07em;
 }
 
+.assessment-header {
+    display: none;
+}
+
 
 .global-assessment {
     padding: 2em 2.5em 2.75em 2.5em;
@@ -551,6 +555,7 @@ h4 {
 
 
 .newsletter-signup {
+    margin-top: -.1em;
     width: 100%;
     padding: 2em;
     background-color: #19204c;
@@ -624,7 +629,7 @@ h4 {
     color: #fff;
     border: .0675em solid #fff;
     width: 3.75em;
-    height: 3.3em;
+    height: 3.35em;
     margin-left: -.35em;
     position: relative;
     top: .2em;
@@ -880,6 +885,108 @@ footer a {
     justify-content: space-between;
     font-size: .9em;
 }
+
+
+
+/* Search Window */
+
+.search-window {
+    width: 65%;
+    position: fixed;
+    z-index: 15;
+    top: 25%;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: #fff;
+    padding: 3em;
+    display: none;
+}
+
+.search-window h2 {
+    margin: 0;
+}
+
+.search-container {
+    margin-top: 1em;
+    display: flex;
+}
+
+.search-form {
+    flex: 1;
+    border: .0675em solid #19204c;
+    color: #19204c;
+    font-family: 'Proxima-Nova', Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    letter-spacing: .02em;
+    font-size: .9em;
+    width: 18em;
+    height: 3em;
+    padding: 0 0 0 1em;
+}
+
+.search-form::placeholder {
+    color: #19204c;
+    opacity: 1;
+    font-size: 1.1em;
+}
+
+.search-form:focus {
+    outline: none;
+}
+
+
+.search-submit {
+    color: #19204c;
+    border: .0675em solid #19204c;
+    width: 3.5em;
+    height: 2.71em;
+    margin-left: -.05em;
+    position: relative;
+    transition: .3s ease;
+}
+
+.search-submit:hover {
+    background-color: #19204c;
+    color: #fff;
+}
+
+.exit-symbol {
+    position: absolute;
+    right: .5em;
+    top: .5em;
+    font-size: 1.5em;
+    color: #19204c;
+    cursor: pointer;
+}
+
+
+.overlay {
+    background-color: rgba(14, 24, 65, 0.88);
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+
+
+.search-open .overlay {
+    display: block;
+}
+
+.search-open .search-window {
+    display: block;
+}
+
+.search-open {
+    overflow: hidden;
+}
+
+
+
+
 
 /* ==========================================================================
    Helper classes
