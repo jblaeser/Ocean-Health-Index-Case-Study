@@ -731,6 +731,7 @@ footer a {
 
 .email-submit {
     color: #19204c;
+    background-color: #fff;
     border: .0675em solid #19204c;
     width: 3.5em;
     height: 2.71em;
@@ -943,6 +944,7 @@ footer a {
 
 .search-submit {
     color: #19204c;
+    background-color: #fff;
     border: .0675em solid #19204c;
     width: 3.5em;
     height: 2.71em;
